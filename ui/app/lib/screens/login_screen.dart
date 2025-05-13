@@ -94,7 +94,14 @@ class _LoginScreenState extends State<LoginScreen> {
          // In real app, pass the actual loggedInUser object
          Navigator.pushReplacement(
            context,
-           MaterialPageRoute(builder: (context) => const OrganizationDashboardScreen()),
+           //MaterialPageRoute(builder: (context) => const OrganizationDashboardScreen()),
+           MaterialPageRoute(builder: (context) => const VolunteerDashboardScreen()),
+         );
+      } else if (mockUserType == UserType.incentivizer) {
+         Navigator.pushReplacement(
+           context,
+           //MaterialPageRoute(builder: (context) => const IncentivizerDashboardScreen()),
+           MaterialPageRoute(builder: (context) => const VolunteerDashboardScreen()),
          );
       } else {
          setState(() { _errorMessage = 'Invalid username or password.'; });

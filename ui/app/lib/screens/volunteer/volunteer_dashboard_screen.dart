@@ -7,7 +7,7 @@ class VolunteerDashboardScreen extends StatefulWidget {
   const VolunteerDashboardScreen({Key? key}) : super(key: key); // Temporary
 
   @override
-  VolunteerDashboardScreenState createState() => _VolunteerDashboardScreenState();
+  _VolunteerDashboardScreenState createState() => _VolunteerDashboardScreenState();
 }
 
 class _VolunteerDashboardScreenState extends State<VolunteerDashboardScreen> {
@@ -21,6 +21,10 @@ class _VolunteerDashboardScreenState extends State<VolunteerDashboardScreen> {
 
   // Mock Data (replace with actual fetched data)
   final DateTime _mockOperationDate = DateTime.now().add(const Duration(days: 5, hours: 3));
+  final dynamic _mockKeyMetrics = [
+    {'name': 'hours_volunteered', 'value': 5},
+    {'name': 'friends', 'value': 9001},
+  ];
 
 
   @override
@@ -102,21 +106,13 @@ class _VolunteerDashboardScreenState extends State<VolunteerDashboardScreen> {
                   onRefresh: _fetchVolunteerData,
                   child: ListView( // Use ListView for scrollable content
                     padding: const EdgeInsets.all(16.0),
-                    children: _isPreoperative
-                        ? _buildPreoperativeView()
-                        : _buildPostoperativeView(),
+                    children: _buildDashboardView()
                   ),
                 ),
-       floatingActionButton: !_isPreoperative ? FloatingActionButton.extended(
-            onPressed: _submitQuestion,
-            icon: const Icon(Icons.question_answer),
-            label: const Text("Ask Provider"),
-        ) : null, // Only show FAB in post-op
     );
   }
 
-  // --- Preoperative View Builder ---
-  List<Widget> _buildPreoperativeView() {
+  List<Widget> _buildDashboardView() {
     return [
       // Countdown Timer
       Card(
@@ -138,29 +134,6 @@ class _VolunteerDashboardScreenState extends State<VolunteerDashboardScreen> {
                 textAlign: TextAlign.center,
               ),
             ],
-          ),
-        ),
-      ),
-      const SizedBox(height: 20),
-
-      // Checklist
-      Text('Preparation Checklist', style: Theme.of(context).textTheme.titleLarge),
-      const SizedBox(height: 8),
-      Card(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0),
-          // TODO: Replace with interactive CheckboxListTiles if needed
-          child: ListView.builder(
-            shrinkWrap: true, // Important inside another ListView
-            physics: const NeverScrollableScrollPhysics(), // Disable inner scrolling
-            itemCount: _mockChecklist.length,
-            itemBuilder: (context, index) {
-              return ListTile(
-                leading: const Icon(Icons.check_box_outline_blank), // Placeholder icon
-                title: Text(_mockChecklist[index]),
-                // onTap: () => // Handle check/uncheck logic
-              );
-            },
           ),
         ),
       ),
@@ -195,108 +168,6 @@ class _VolunteerDashboardScreenState extends State<VolunteerDashboardScreen> {
            ),
          ),
        ),
-    ];
-  }
-
-  // --- Postoperative View Builder ---
-  List<Widget> _buildPostoperativeView() {
-    return [
-      // Recovery Day Count & Message
-      Card(
-        elevation: 2,
-        color: Colors.blueAccent.withOpacity(0.1),
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: [
-              Text(
-                'Day X of volunteering',
-                style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                "Keep up the great work! Remember to follow your instructions.", // Supportive message placeholder
-                style: Theme.of(context).textTheme.bodyMedium,
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        ),
-      ),
-      const SizedBox(height: 20),
-
-      // Daily Check-in Button
-      ElevatedButton.icon(
-        onPressed: _doDailyCheckIn,
-        icon: const Icon(Icons.checklist_rtl),
-        label: const Text('Do Your Daily Check-in'),
-        style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.symmetric(vertical: 16.0),
-          textStyle: const TextStyle(fontSize: 16),
-          minimumSize: const Size.fromHeight(50), // Make button prominent
-        ),
-      ),
-      const SizedBox(height: 20),
-
-      // Key Metrics Visualization
-      Text('Your Key Metrics', style: Theme.of(context).textTheme.titleLarge),
-      const SizedBox(height: 8),
-      GridView.builder(
-        shrinkWrap: true, // Important inside ListView
-        physics: const NeverScrollableScrollPhysics(), // Disable inner scrolling
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2, // 2 columns
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
-          childAspectRatio: 1.2, // Adjust aspect ratio as needed
-        ),
-        itemCount: _mockKeyMetrics.length,
-        itemBuilder: (context, index) {
-          final metric = _mockKeyMetrics[index];
-          return Card(
-            elevation: 1,
-            child: InkWell( // Make card tappable
-              onTap: () => _viewMetricDetails(metric['name'], metric['data']),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      metric['name'],
-                      style: Theme.of(context).textTheme.titleSmall,
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 8),
-                    // TODO: Replace Text with a small chart/visualization later
-                    Text(
-                      metric['value'].toString(),
-                      style: Theme.of(context).textTheme.headlineSmall,
-                      textAlign: TextAlign.center,
-                    ),
-                     const SizedBox(height: 4),
-                     const Text(
-                      "(Tap for details)", // Hint for interaction
-                       style: TextStyle(fontSize: 10, color: Colors.grey),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          );
-        },
-      ),
-       const SizedBox(height: 20),
-       // TODO: Add section for viewing past check-ins (using ListView/ExpansionPanelList)
-       // TODO: Add section for viewing provider instructions
-       // Example:
-       // ExpansionTile(
-       //    title: Text("View Past Check-ins"),
-       //    children: [ /* Build list of past check-ins here */ ]
-       // )
-       const SizedBox(height: 60), // Add padding at bottom for FAB
     ];
   }
 }
