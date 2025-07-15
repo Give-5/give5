@@ -89,16 +89,25 @@ When setting up Supabase, we need:
 ```
 /give5
 ├── /app                    # Next.js app directory
+│   └── /components        # Component showcase page
 ├── /components            # React components
+│   ├── /ui               # Reusable UI components
+│   └── /layout           # Layout components
 ├── /lib                   # Utilities and helpers
 │   ├── /supabase         # Supabase client and helpers
 │   ├── /hooks            # Custom React hooks
-│   └── /types            # TypeScript types
+│   ├── /types            # TypeScript types
+│   └── /styles           # Design system tokens
 ├── /supabase             # Supabase project files
 │   ├── /migrations       # SQL migrations
 │   ├── /functions        # Edge functions
 │   └── config.toml       # Local config
 ├── /public               # Static assets
+│   └── /images           # Logo and icons
+├── /dev-docs             # Development documentation
+│   ├── /screenshots      # Design mockups
+│   ├── /components       # Component assets
+│   └── /styles           # Style guide assets
 └── /tests                # Test files
 ```
 
@@ -194,12 +203,47 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_key
 4. Commit with detailed message
 5. Tag with version if milestone
 
+## Style Guide & Component Development
+
+### Design System
+The app uses a comprehensive design system defined in `/lib/styles/`:
+- **colors.ts**: Color tokens and semantic color mappings
+- **typography.ts**: Font families, sizes, and text styles
+- **effects.ts**: Shadows, borders, spacing, and transitions
+
+### Component Showcase
+Visit `/components` in the app to see:
+- Color palette with all design tokens
+- Typography examples showing all text styles
+- Reusable components (buttons, inputs, cards, etc.)
+- Logo variants and usage
+
+### Styling Best Practices
+1. **Use Design Tokens**: Import from `@/lib/styles` instead of hardcoding values
+2. **Tailwind Classes**: Use predefined classes like `text-give5-blue`, `bg-give5-light-bg`
+3. **Component Reuse**: Check showcase before creating new components
+4. **Consistency**: Follow patterns established in existing components
+5. **Documentation**: Update showcase when adding new reusable components
+
+### Logo Usage
+Three logo variants available:
+- **Icon**: `/images/logo.png` - Hand icon only
+- **Text**: Logo component with `variant="text"` - Text only for headers
+- **Combined**: Logo component with `variant="default"` - Icon + text
+
+### Typography Guidelines
+- **Headings**: Use Figtree font family
+- **Body Text**: Use League Spartan font family
+- **Hierarchy**: Follow the defined type scale (H1-H5, B1-B3)
+
 ## Common Issues & Solutions
 1. **Port conflicts**: Dev server defaults to 3000, will try 3001, 3002
 2. **Image 404s**: Place images in `/public/images/`
 3. **Type errors**: Run `npm run lint` to check
 4. **Visual test failures**: Compare with design, update if intentional
 5. **Supabase connection**: Check .env.local and MCP configuration
+6. **Style inconsistencies**: Refer to component showcase and style guide
+7. **Playwright browser windows**: Configured to run in headless mode via `.playwright-config.json`
 
 ## Useful Supabase MCP Commands
 When MCP is active, you can:

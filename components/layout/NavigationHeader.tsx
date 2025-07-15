@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Logo from '@/components/ui/Logo'
 
 interface NavigationHeaderProps {
   title: string
@@ -15,11 +16,7 @@ export default function NavigationHeader({ title, showMenu = true }: NavigationH
     <>
       <header className="bg-give5-blue px-4 py-3 shadow-sm">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-baseline">
-            <span className="text-3xl font-bold text-white">GIVE</span>
-            <span className="text-3xl font-bold text-give5-red">5</span>
-            <span className="text-sm font-medium text-white ml-2">MILE HIGH</span>
-          </Link>
+          <Logo variant="text" href="/home" />
           
           <h1 className="text-2xl text-white font-medium">{title}</h1>
           
@@ -41,11 +38,7 @@ export default function NavigationHeader({ title, showMenu = true }: NavigationH
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 bg-give5-blue">
           <div className="flex justify-between items-center p-4">
-            <Link href="/" className="flex items-baseline">
-              <span className="text-3xl font-bold text-white">GIVE</span>
-              <span className="text-3xl font-bold text-give5-red">5</span>
-              <span className="text-sm font-medium text-white ml-2">MILE HIGH</span>
-            </Link>
+            <Logo variant="text" />
             
             <button
               onClick={() => setIsMenuOpen(false)}

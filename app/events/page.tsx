@@ -10,46 +10,76 @@ export default function EventsPage() {
 
   const events = [
     {
+      id: '1',
       title: "Park Cleanup & Picnic",
       date: "August 3, 2025",
-      time: "10:00 AM - 1:00 PM",
+      startTime: "10:00 AM",
+      endTime: "1:00 PM",
       location: "City Park, 2001 Colorado Blvd",
+      organization: "Denver Parks & Recreation",
+      volunteersNeeded: 30,
+      volunteersRegistered: 15,
       description: "Help beautify Denver's iconic park, then unwind with snacks and community vibes under the sun."
     },
     {
-      title: "Park Cleanup & Picnic",
-      date: "August 3, 2025",
-      time: "10:00 AM - 1:00 PM",
-      location: "City Park, 2001 Colorado Blvd",
-      description: "Help beautify Denver's iconic park, then unwind with snacks and community vibes under the sun."
+      id: '2',
+      title: "Food Bank Sorting",
+      date: "August 5, 2025",
+      startTime: "9:00 AM",
+      endTime: "12:00 PM",
+      location: "Denver Food Bank, 2222 Larimer St",
+      organization: "Denver Food Bank",
+      volunteersNeeded: 20,
+      volunteersRegistered: 18,
+      description: "Sort and pack food donations to help feed families in need across the Denver metro area."
     },
     {
-      title: "Park Cleanup & Picnic",
-      date: "August 3, 2025",
-      time: "10:00 AM - 1:00 PM",
-      location: "City Park, 2001 Colorado Blvd",
-      description: "Help beautify Denver's iconic park, then unwind with snacks and community vibes under the sun."
+      id: '3',
+      title: "Senior Center Tech Help",
+      date: "August 7, 2025",
+      startTime: "2:00 PM",
+      endTime: "4:00 PM",
+      location: "Stapleton Senior Center, 2660 E 29th Ave",
+      organization: "Mile High Seniors",
+      volunteersNeeded: 10,
+      volunteersRegistered: 5,
+      description: "Assist seniors with smartphones, tablets, and computers in a friendly, patient environment."
     },
     {
-      title: "Park Cleanup & Picnic",
-      date: "August 3, 2025",
-      time: "10:00 AM - 1:00 PM",
-      location: "City Park, 2001 Colorado Blvd",
-      description: "Help beautify Denver's iconic park, then unwind with snacks and community vibes under the sun."
+      id: '4',
+      title: "Trail Maintenance",
+      date: "August 10, 2025",
+      startTime: "8:00 AM",
+      endTime: "12:00 PM",
+      location: "Cherry Creek Trail, Confluence Park",
+      organization: "Colorado Trail Foundation",
+      volunteersNeeded: 25,
+      volunteersRegistered: 20,
+      description: "Help maintain Denver's beautiful trails by clearing debris and repairing pathways."
     },
     {
-      title: "Park Cleanup & Picnic",
-      date: "August 3, 2025",
-      time: "10:00 AM - 1:00 PM",
-      location: "City Park, 2001 Colorado Blvd",
-      description: "Help beautify Denver's iconic park, then unwind with snacks and community vibes under the sun."
+      id: '5',
+      title: "Community Garden Planting",
+      date: "August 12, 2025",
+      startTime: "10:00 AM",
+      endTime: "2:00 PM",
+      location: "DeLaney Community Farm, 170 S Chambers Rd",
+      organization: "Denver Urban Gardens",
+      volunteersNeeded: 15,
+      volunteersRegistered: 8,
+      description: "Plant vegetables and herbs that will feed local families while learning about urban farming."
     },
     {
-      title: "Park Cleanup & Picnic",
-      date: "August 3, 2025",
-      time: "10:00 AM - 1:00 PM",
-      location: "City Park, 2001 Colorado Blvd",
-      description: "Help beautify Denver's iconic park, then unwind with snacks and community vibes under the sun."
+      id: '6',
+      title: "Youth Mentorship Program",
+      date: "August 15, 2025",
+      startTime: "3:00 PM",
+      endTime: "5:00 PM",
+      location: "Boys & Girls Club, 2017 W 9th Ave",
+      organization: "Boys & Girls Club of Metro Denver",
+      volunteersNeeded: 12,
+      volunteersRegistered: 10,
+      description: "Mentor youth through homework help, sports activities, and positive role modeling."
     }
   ]
 
@@ -96,7 +126,7 @@ export default function EventsPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {events.map((event, index) => (
-              <EventCard key={index} {...event} />
+              <EventCard key={index} event={event} />
             ))}
           </div>
         </section>

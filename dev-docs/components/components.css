@@ -1,0 +1,1044 @@
+/* Rectangle 1 */
+
+position: absolute;
+width: 2684px;
+height: 3336px;
+
+background: #FFFFFF;
+
+
+/* username form */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 418px;
+height: 30px;
+
+
+
+/* username title */
+
+width: 418px;
+height: 30px;
+
+/* Global Tokens/Headings/H-5 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+color: #092184;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* usernamefield */
+
+box-sizing: border-box;
+
+position: relative;
+width: 458px;
+height: 316px;
+
+border: 1px dashed #8A38F5;
+border-radius: 5px;
+
+
+/* Property 1=Default */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px 24px;
+gap: 10px;
+
+position: absolute;
+width: 418px;
+height: 54px;
+left: 20px;
+top: 20px;
+
+background: rgba(13, 49, 199, 0.04);
+border-radius: 8px;
+
+
+/* username placeholder */
+
+width: 256px;
+height: 30px;
+
+/* Global Tokens/Headings/H-5 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+color: #CBCBCB;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Property 1=Variant2 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px 24px;
+gap: 10px;
+
+position: absolute;
+width: 418px;
+height: 54px;
+left: 20px;
+top: 94px;
+
+background: rgba(13, 49, 199, 0.04);
+border: 1px solid #0D31C7;
+/* Global Tokens/E1 */
+box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.13), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+border-radius: 8px;
+
+
+/* username placeholder */
+
+width: 256px;
+height: 30px;
+
+/* Global Tokens/Headings/H-5 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+color: #CBCBCB;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* usernamefield */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px 24px;
+gap: 10px;
+
+position: relative;
+width: 418px;
+height: 54px;
+
+background: rgba(13, 49, 199, 0.04);
+border-radius: 8px;
+
+
+/* username placeholder */
+
+width: 256px;
+height: 30px;
+
+/* Global Tokens/Headings/H-5 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+color: #CBCBCB;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* password form */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 418px;
+height: 92px;
+
+
+
+/* password title */
+
+width: 418px;
+height: 30px;
+
+/* Global Tokens/Headings/H-5 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+color: #092184;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* passwordfield */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px 24px;
+gap: 10px;
+
+width: 418px;
+height: 54px;
+
+background: rgba(13, 49, 199, 0.04);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* button secdondary */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 80px;
+gap: 10px;
+
+position: relative;
+width: 268px;
+height: 48px;
+
+border: 2px solid #FDCD5B;
+/* Global Tokens/E0 */
+border-radius: 24px;
+
+
+/* login */
+
+width: 56px;
+height: 39px;
+
+/* Global Tokens/Headings/H-4 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height, or 150% */
+
+color: #FDCD5B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* button accent */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 80px;
+gap: 10px;
+
+position: relative;
+width: 268px;
+height: 48px;
+
+background: #FDCD5B;
+/* Global Tokens/E0 */
+border-radius: 24px;
+
+
+/* login */
+
+width: 56px;
+height: 39px;
+
+/* Global Tokens/Headings/H-4 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height, or 150% */
+
+color: #F2F8FC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* button main */
+
+box-sizing: border-box;
+
+position: relative;
+width: 308px;
+height: 242px;
+
+border: 1px dashed #8A38F5;
+border-radius: 5px;
+
+
+/* Property 1=Default */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 80px;
+gap: 10px;
+
+position: absolute;
+width: 268px;
+height: 48px;
+left: 20px;
+top: 20px;
+
+background: #092184;
+/* Global Tokens/E0 */
+border-radius: 24px;
+
+
+/* login */
+
+width: 56px;
+height: 39px;
+
+/* Global Tokens/Headings/H-4 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height, or 150% */
+
+color: #F2F8FC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Property 1=clicked */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 80px;
+gap: 10px;
+
+position: absolute;
+width: 268px;
+height: 48px;
+left: 20px;
+top: 94px;
+
+border: 2px solid #092184;
+/* Global Tokens/E0 */
+border-radius: 24px;
+
+
+/* login */
+
+width: 56px;
+height: 39px;
+
+/* Global Tokens/Headings/H-4 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height, or 150% */
+
+color: #092184;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* button secdondary */
+
+box-sizing: border-box;
+
+position: relative;
+width: 308px;
+height: 168px;
+
+border: 1px dashed #8A38F5;
+border-radius: 5px;
+
+
+/* Property 1=Default */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 80px;
+gap: 10px;
+
+position: absolute;
+width: 268px;
+height: 48px;
+left: 20px;
+top: 20px;
+
+background: rgba(13, 49, 199, 0.1);
+/* Global Tokens/E0 */
+border-radius: 24px;
+
+
+/* login */
+
+width: 56px;
+height: 39px;
+
+/* Global Tokens/Headings/H-4 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height, or 150% */
+
+color: #092184;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Property 1=Variant2 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 80px;
+gap: 10px;
+
+position: absolute;
+width: 268px;
+height: 48px;
+left: 20px;
+top: 94px;
+
+border: 2px solid #94A7F8;
+/* Global Tokens/E0 */
+border-radius: 24px;
+
+
+/* login */
+
+width: 56px;
+height: 39px;
+
+/* Global Tokens/Headings/H-4 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height, or 150% */
+
+color: #94A7F8;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 3 */
+
+box-sizing: border-box;
+
+position: relative;
+width: 238px;
+height: 116px;
+
+border: 1px dashed #8A38F5;
+border-radius: 5px;
+
+
+/* Property 1=Default */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 198px;
+height: 28px;
+left: 20px;
+top: 20px;
+
+border: 1px solid #092184;
+border-radius: 24px;
+
+
+/* icons8-gmail 1 */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 72.92%;
+right: 6.25%;
+top: 33.75%;
+bottom: 16.67%;
+
+background: #4CAF50;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 72.92%;
+top: 33.75%;
+bottom: 16.67%;
+
+background: #1E88E5;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 23.33%;
+bottom: 33.44%;
+
+background: #E53935;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 72.92%;
+top: 16.67%;
+bottom: 50.62%;
+
+background: #C62828;
+
+
+/* Vector */
+
+position: absolute;
+left: 72.92%;
+right: 6.25%;
+top: 16.67%;
+bottom: 50.62%;
+
+background: #FBC02D;
+
+
+/* Sign in with Gmail */
+
+width: 135px;
+height: 30px;
+
+/* Global Tokens/Body/B-1 */
+font-family: 'League Spartan';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* identical to box height, or 167% */
+
+color: #092184;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Property 1=Variant2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 198px;
+height: 28px;
+left: 20px;
+top: 68px;
+
+background: #94A7F8;
+border-radius: 24px;
+
+
+/* icons8-gmail 1 */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 72.92%;
+right: 6.25%;
+top: 33.75%;
+bottom: 16.67%;
+
+background: #4CAF50;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 72.92%;
+top: 33.75%;
+bottom: 16.67%;
+
+background: #1E88E5;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 23.33%;
+bottom: 33.44%;
+
+background: #E53935;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 72.92%;
+top: 16.67%;
+bottom: 50.62%;
+
+background: #C62828;
+
+
+/* Vector */
+
+position: absolute;
+left: 72.92%;
+right: 6.25%;
+top: 16.67%;
+bottom: 50.62%;
+
+background: #FBC02D;
+
+
+/* Sign in with Gmail */
+
+width: 135px;
+height: 30px;
+
+/* Global Tokens/Body/B-1 */
+font-family: 'League Spartan';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* identical to box height, or 167% */
+
+color: #F2F8FC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* preLoginNav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 10px 32px;
+gap: 394px;
+
+position: relative;
+width: 1280px;
+height: 72px;
+
+background: rgba(13, 49, 199, 0.1);
+/* Global Tokens/E2 */
+box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.19), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+
+
+/* BlueGive5Logo */
+
+width: 88px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 2.5%;
+right: 95.89%;
+top: 25%;
+bottom: 46.94%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.3%;
+right: 94.88%;
+top: 25.3%;
+bottom: 47.17%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 5.24%;
+right: 93.21%;
+top: 25.26%;
+bottom: 46.99%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.97%;
+right: 91.99%;
+top: 25.27%;
+bottom: 47.21%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.25%;
+right: 90.63%;
+top: 25.3%;
+bottom: 46.71%;
+
+background: #EF3A38;
+
+
+/* Vector */
+
+position: absolute;
+left: 2.65%;
+right: 96.46%;
+top: 59.58%;
+bottom: 25.14%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 3.7%;
+right: 95.85%;
+top: 59.58%;
+bottom: 25.14%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.31%;
+right: 95.13%;
+top: 59.58%;
+bottom: 25.19%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 5%;
+right: 94.42%;
+top: 59.55%;
+bottom: 25.16%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.09%;
+right: 93.16%;
+top: 59.61%;
+bottom: 25.16%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7%;
+right: 92.55%;
+top: 59.58%;
+bottom: 25.14%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.57%;
+right: 91.54%;
+top: 59.42%;
+bottom: 25%;
+
+background: #354BA0;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.6%;
+right: 90.65%;
+top: 59.61%;
+bottom: 25.16%;
+
+background: #354BA0;
+
+
+/* Welcome */
+
+width: 139px;
+height: 51px;
+
+/* Global Tokens/Headings/H-3 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 600;
+font-size: 34px;
+line-height: 51px;
+/* identical to box height, or 150% */
+letter-spacing: -1px;
+
+color: #092184;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* volunteer count bg */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: relative;
+width: 94px;
+height: 40px;
+
+background: #D00416;
+/* Global Tokens/E1 */
+box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.13), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+border-radius: 16px;
+
+
+/* volunteer count */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 4px;
+
+width: 61px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* x */
+
+width: 10px;
+height: 30px;
+
+/* Global Tokens/Headings/H-5 */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+color: #F2F8FC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* cancel */
+
+width: 47px;
+height: 30px;
+
+/* Global Tokens/Body/B-1 */
+font-family: 'League Spartan';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* identical to box height, or 167% */
+display: flex;
+align-items: center;
+
+color: #F2F8FC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
